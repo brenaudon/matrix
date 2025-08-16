@@ -2,7 +2,7 @@ from vector import Vector
 from matrix import Matrix
 
 if __name__ == "__main__":
-    # --- vectors ---
+    # vectors
     u = Vector([2., 3.])
     v = Vector([5., 7.])
     u.add(v)
@@ -10,9 +10,8 @@ if __name__ == "__main__":
 
     w = u + v
     print(w) # Vector([12.0, 17.0])
-    print(u) # Vector([7.0, 10.0])  # u is unchanged
+    print(u) # Vector([7.0, 10.0]), u is unchanged
 
-    #print new line
     print("")
 
     u = Vector([2., 3.])
@@ -22,7 +21,7 @@ if __name__ == "__main__":
 
     w = u - v
     print(w) # Vector([-8.0, -11.0])
-    print(u) # Vector([-3.0, -4.0])  # u is unchanged
+    print(u) # Vector([-3.0, -4.0], u is unchanged
 
     print("")
 
@@ -32,11 +31,11 @@ if __name__ == "__main__":
 
     w = 2. * u
     print(w) # Vector([8.0, 12.0])
-    print(u) # Vector([4.0, 6.0])  # u is unchanged
+    print(u) # Vector([4.0, 6.0]), u is unchanged
 
     print("")
 
-    # --- matrices ---
+    # matrices
     m = Matrix([[1., 2.],
                 [3., 4.]])
     n = Matrix([[ 7., 4.],
@@ -53,7 +52,7 @@ if __name__ == "__main__":
 
     print(m)
     # Matrix([[8.0, 6.0],
-    #         [1.0, 6.0]])  # m is unchanged
+    #         [1.0, 6.0]]),  m is unchanged
 
     print("")
 
@@ -72,7 +71,7 @@ if __name__ == "__main__":
     #         [  7.0,  0.0]])
     print(m)
     # Matrix([[-6.0, -2.0],
-    #         [ 5.0,  2.0]])  # m is unchanged
+    #         [ 5.0,  2.0]]), m is unchanged
 
     print("")
 
@@ -88,4 +87,4 @@ if __name__ == "__main__":
     #         [12.0, 16.0]])
     print(m)
     # Matrix([[2.0, 4.0],
-    #         [6.0, 8.0]])  # m is unchanged
+    #         [6.0, 8.0]]), m is unchanged

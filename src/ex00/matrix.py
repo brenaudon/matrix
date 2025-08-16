@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TypeVar, Generic, Sequence, List, TYPE_CHECKING
 from numbers import Number
 
-if TYPE_CHECKING: # static-type import, safe for mypy/pyright
+if TYPE_CHECKING:
     from vector import Vector
 
 T = TypeVar('T', bound=Number)

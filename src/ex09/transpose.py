@@ -1,12 +1,3 @@
-"""
-Exercise 09 – Transpose
-
-Free‑function implementation that leaves your original `Matrix` class intact.
-Time complexity : Θ(n·m) (one assignment per entry)
-Space complexity: Θ(n·m) (the returned matrix)
-
-    from ex09 import transpose
-"""
 from __future__ import annotations
 
 from typing import TypeVar

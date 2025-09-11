@@ -4,7 +4,7 @@ from typing import Sequence, TypeVar
 from numbers import Number
 import math
 
-from vector import Vector   # our generic 1-D container
+from vector import Vector
 
 T = TypeVar("T", bound = Number)
 

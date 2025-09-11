@@ -5,7 +5,7 @@ from numbers import Number
 
 from matrix import Matrix
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def transpose(mat: Matrix[T]) -> Matrix[T]:

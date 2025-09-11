@@ -5,11 +5,11 @@ from numbers import Number
 
 from matrix import Matrix
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 _EPS = 1e-10  # tolerance for pivoting floats
 
 
-def _is_zero(x: T) -> bool:  # type: ignore[return-value]
+def _is_zero(x: T) -> bool:
     try:
         return abs(x) < _EPS
     except TypeError:
@@ -27,11 +27,10 @@ def inverse(mat: Matrix[T]) -> Matrix[T]:
     n = n_rows
 
     # Build the augmented matrix [A | I]
-    A = [row.copy() for row in (mat._m if hasattr(mat, "_m")          # type: ignore[attr-defined]
-                                else [[mat[r, c] for c in range(n)] for r in range(n)])]
+    A = [[mat[r, c] for c in range(n)] for r in range(n)]
     I = [[mat[0, 0] - mat[0, 0] for _ in range(n)] for _ in range(n)]  # zero matrix of type T
     for i in range(n):
-        I[i][i] = I[i][i] + 1     # set to 1 of type T
+        I[i][i] = I[i][i] + 1
     aug = [A[i] + I[i] for i in range(n)]  # each row: A | I
 
     # Gauss–Jordan elimination
@@ -46,7 +45,7 @@ def inverse(mat: Matrix[T]) -> Matrix[T]:
             aug[pivot_row], aug[pivot] = aug[pivot], aug[pivot_row]
         # scale pivot row
         pv = aug[pivot_row][col]
-        scale = [x / pv for x in aug[pivot_row]]  # type: ignore[operator]
+        scale = [x / pv for x in aug[pivot_row]]
         aug[pivot_row] = scale
         # eliminate other rows
         for r in range(n):

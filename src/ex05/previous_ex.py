@@ -6,7 +6,7 @@ import math
 
 from vector import Vector
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 def dot(u: Vector[T], v: Vector[T]) -> T:
     """Return the dot product ⟨u|v⟩ of two same‑size vectors.

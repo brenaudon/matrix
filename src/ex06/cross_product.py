@@ -6,7 +6,7 @@ import math
 
 from vector import Vector
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def cross_product(u: Vector[T], v: Vector[T]) -> Vector[T]:

@@ -6,11 +6,11 @@ from numbers import Number
 from matrix import Matrix
 from row_echelon import row_echelon
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 _EPS = 1e-10
 
 
-def _is_zero_scalar(x: T) -> bool:  # type: ignore[return-value]
+def _is_zero_scalar(x: T) -> bool:
     """Zero‑test"""
     try:
         return abs(x) < _EPS
@@ -19,7 +19,7 @@ def _is_zero_scalar(x: T) -> bool:  # type: ignore[return-value]
 
 
 def rank(mat: Matrix[T]) -> int:
-    """Return the rank of matrix.
+    """Return the rank of matrix. Rank is the number of non‑zero rows in the row‑echelon form.
 
     Time complexity: O(n^3) for an n x n matrix.
     Space complexity: O(n^2) for an n x n matrix.

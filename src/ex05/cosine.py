@@ -6,11 +6,11 @@ from numbers import Number
 from vector import Vector
 from previous_ex import dot, norm2
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def angle_cos(u: Vector[T], v: Vector[T]) -> float:
-    """Return cos(u,v) = ⟨u|v⟩ / (‖u‖₂ · ‖v‖₂).
+    """Return cos(u,v) = ⟨u|v⟩ / (‖u‖₂ * ‖v‖₂).
 
     Time complexity: Θ(n) (coordinates)
     Space complexity: Θ(1) (single accumulator)

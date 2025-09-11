@@ -6,7 +6,7 @@ import math
 
 from vector import Vector   # our generic 1-D container
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def linear_combination(

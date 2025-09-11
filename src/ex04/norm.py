@@ -6,7 +6,7 @@ import math
 
 from vector import Vector
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def norm1(v: Vector[T]) -> float:
@@ -38,4 +38,4 @@ def norm_inf(v: Vector[T]) -> float:
 
     Complexity: Θ(n) time, O(1) extra space.
     """
-    return float(max((abs(x) for x in v), default=0.0))
+    return float(max((abs(x) for x in v), default = 0.0))

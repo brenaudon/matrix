@@ -6,7 +6,7 @@ import math
 
 from vector import Vector  # re‑use your Vector class
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def dot(u: Vector[T], v: Vector[T]) -> T:
@@ -18,13 +18,13 @@ def dot(u: Vector[T], v: Vector[T]) -> T:
     if len(u) != len(v):
         raise ValueError("Vector size mismatch in dot product")
 
-    # Identity of the right numeric type
+    # Zero of the right numeric type
     zero: T = u[0] - u[0] if u else v[0] - v[0]
 
     total: T = zero
     fma = getattr(math, "fma", None)
 
-    # Optional fused multiply‑add for floats)
+    # Fused multiply‑add for floats
     if fma is not None and all(isinstance(x, float) for x in (*u, *v)):
         for a, b in zip(u, v):
             total = fma(a, b, total)

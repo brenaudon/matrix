@@ -6,9 +6,8 @@ import math
 
 from vector import Vector
 from matrix import Matrix
-from dot_product import dot
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def mat_vec_mul(mat: Matrix[T], u: Vector[T]) -> Vector[T]:
@@ -18,10 +17,13 @@ def mat_vec_mul(mat: Matrix[T], u: Vector[T]) -> Vector[T]:
     Space complexity : O(m)    (m=rows, result vector)
     """
     m, n = mat.shape()
+    if m == 0 or n == 0:
+        raise ValueError("Matrix cannot be empty")
     if len(u) != n:
         raise ValueError("Dimension mismatch in matrix–vector product")
 
     fma = getattr(math, "fma", None)
+    zero: T = u[0] - u[0]
     out = []
 
     for row in mat._m:  # direct row access, no column cache
@@ -30,7 +32,7 @@ def mat_vec_mul(mat: Matrix[T], u: Vector[T]) -> Vector[T]:
             for a, b in zip(row, u):
                 acc = fma(a, b, acc)
         else:
-            acc = 0
+            acc = zero
             for a, b in zip(row, u):
                 acc += a * b
         out.append(acc)
@@ -46,13 +48,16 @@ def mat_mat_mul(mat1: Matrix[T], mat2: Matrix[T]) -> Matrix[T]:
     """
     m, n = mat1.shape()
     n2, p = mat2.shape()
+    if m == 0 or n == 0 or n2 == 0 or p == 0:
+        raise ValueError("Matrices cannot be empty")
     if n != n2:
         raise ValueError("Inner dimensions do not match for A·B")
 
     fma = getattr(math, "fma", None)
+    zero: T = mat1[0][0] - mat1[0][0]
     result = [[None] * p for _ in range(m)]
 
-    # No column cache so no extra memory; just indexed access.
+    # No column cache for no extra memory, just indexed access.
     for i, rowA in enumerate(mat1._m):
         for j in range(p):
             if fma is not None and all(isinstance(x, float) for x in (*rowA, *(mat2._m[k][j] for k in range(n)))):
@@ -60,7 +65,7 @@ def mat_mat_mul(mat1: Matrix[T], mat2: Matrix[T]) -> Matrix[T]:
                 for k, a in enumerate(rowA):
                     acc = fma(a, mat2._m[k][j], acc)
             else:
-                acc = 0
+                acc = zero
                 for k, a in enumerate(rowA):
                     acc += a * mat2._m[k][j]
             result[i][j] = acc

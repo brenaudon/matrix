@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import TypeVar, Generic, Sequence, List, TYPE_CHECKING
 from numbers import Number
 
-if TYPE_CHECKING: # static-type import, safe for mypy/pyright
+if TYPE_CHECKING:
     from vector import Vector
 
-T = TypeVar('T', bound=Number)
+T = TypeVar('T', bound = Number)
 
 class Matrix(Generic[T]):
 
@@ -25,13 +25,25 @@ class Matrix(Generic[T]):
 
     def shape(self) -> tuple[int, int]: return self._shape
 
-    def __getitem__(self, rc): # m[i][j] style access
-        r, c = rc
-        return self._m[r][c]
+    def __getitem__(self, key):
+        # mat[i, j]
+        if isinstance(key, tuple) and len(key) == 2:
+            r, c = key
+            return self._m[r][c]
+        # mat[i] -> return row
+        elif isinstance(key, int):
+            return self._m[key]
+        else:
+            raise TypeError("Index must be int or (int, int)")
 
-    def __setitem__(self, rc, value: T) -> None:
-        r, c = rc
-        self._m[r][c] = value
+    def __setitem__(self, key, value):
+        if isinstance(key, tuple) and len(key) == 2:
+            r, c = key
+            self._m[r][c] = value
+        elif isinstance(key, int):
+            self._m[key] = list(value)
+        else:
+            raise TypeError("Index must be int or (int, int)")
 
     def __repr__(self) -> str:
         return "Matrix([" + ",\n        ".join(map(str, self._m)) + "])"

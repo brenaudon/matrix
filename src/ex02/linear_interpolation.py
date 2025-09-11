@@ -7,7 +7,7 @@ import math
 from vector import Vector
 from matrix import Matrix
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 def lerp(u, v, t: float):
     """
@@ -21,9 +21,9 @@ def lerp(u, v, t: float):
     if type(u) is not type(v):
         raise ValueError("u and v must be of the same type")
 
-    # plain numbers
+    # numbers
     if isinstance(u, Number):
-        # use fma when possible: (1-t)*u + t*v  ==  u + t*(v-u)
+        # fma when possible: (1 - t) * u + t * v  ==  u + t * (v - u)
         if isinstance(u, float) and hasattr(math, "fma"):
             return math.fma(t, v - u, u)
         return u + t * (v - u)

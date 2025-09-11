@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TypeVar, Generic, Sequence, List, Iterable
 from numbers import Number
 
-T = TypeVar('T', bound=Number)
+T = TypeVar('T', bound = Number)
 
 class Vector(Generic[T]):
     def __init__(self, data: Sequence[T]) -> None:

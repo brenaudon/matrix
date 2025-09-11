@@ -5,7 +5,7 @@ from numbers import Number
 
 from matrix import Matrix
 
-T = TypeVar("T", bound=Number)
+T = TypeVar("T", bound = Number)
 
 
 def trace(mat: Matrix[T]) -> T:
@@ -18,11 +18,11 @@ def trace(mat: Matrix[T]) -> T:
         raise ValueError("Matrix must be square")
 
     # Additive identity of the correct numeric type
-    acc: T = mat[0, 0] - mat[0, 0]
+    acc: T = mat[0][0] - mat[0][0]
 
     rows, _ = mat.shape()
 
     for i in range(rows):
-        acc += mat[i, i]
+        acc += mat[i][i]
 
     return acc

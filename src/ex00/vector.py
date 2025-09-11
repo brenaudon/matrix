@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TypeVar, Generic, Sequence, List, Iterable, TYPE_CHECKING
 from numbers import Number
 
-if TYPE_CHECKING: # static-type import, no runtime impact
+if TYPE_CHECKING: # static-type import, no runtime impact (to avoid circular import)
     from matrix import Matrix
 
 T = TypeVar('T', bound=Number)

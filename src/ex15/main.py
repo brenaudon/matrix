@@ -15,6 +15,7 @@ def main():
     print("linear_combination([u,v], [1+i, 0.5−i]) =",
           linear_combination([u, v], [C(1,1), C(0.5, -1)]), "\n")
     print("dot(u, v) =", dot(u, v), "\n")
+    print("dot(u, u) =", dot(u, u), "\n")
     print("norm1(u) =", norm1(u), "\n", "  norm2(u) =", norm2(u), "\n", "  norm_inf(u) =", norm_inf(u), "\n")
     print("angle_cos(u, v) =", angle_cos(u, v), "\n")
     print("lerp(u, v, 0.25) =", lerp(u, v, 0.25), "\n")

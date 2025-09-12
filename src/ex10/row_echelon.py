@@ -29,7 +29,7 @@ def row_echelon(mat: Matrix[T], decimals: int = ROUND) -> Matrix[T]:
     m, n = mat.shape()
 
     # Deep copy
-    A = [[mat[r, c] for c in range(n)] for r in range(n)]
+    A = [[mat[r, c] for c in range(n)] for r in range(m)]
 
     pivot_row = 0
     for col in range(n):

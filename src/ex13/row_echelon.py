@@ -28,8 +28,8 @@ def row_echelon(mat: Matrix[T], decimals: int = ROUND) -> Matrix[T]:
     """
     m, n = mat.shape()
 
-    # deep copy of the data so the input is left intact
-    A = [row.copy() for row in (mat._m if hasattr(mat, "_m") else [[mat[r, c] for c in range(n)] for r in range(m)])]
+    # Deep copy
+    A = [[mat[r, c] for c in range(n)] for r in range(m)]
 
     pivot_row = 0
     for col in range(n):

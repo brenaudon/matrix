@@ -4,7 +4,7 @@ from linear_interpolation import lerp
 
 if __name__ == "__main__":
     # scalars
-    print("scalar 0: S", lerp(0.0, 1.0, 0.0)) # 0.0
+    print("scalar 0: ", lerp(0.0, 1.0, 0.0)) # 0.0
     print("scalar 1: ", lerp(0.0, 1.0, 1.0)) # 1.0
     print("scalar 1/2: ", lerp(0.0, 1.0, 0.5)) # 0.5
     print("scalar .3: ", lerp(21.0, 42.0, 0.3)) # 27.3

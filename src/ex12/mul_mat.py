@@ -23,7 +23,7 @@ def mat_mat_mul(mat1: Matrix[T], mat2: Matrix[T]) -> Matrix[T]:
         raise ValueError("Inner dimensions do not match for A·B")
 
     fma = getattr(math, "fma", None)
-    zero: T = mat[0][0] - mat[0][0]
+    zero: T = mat1[0][0] - mat1[0][0]
     result = [[None] * p for _ in range(m)]
 
     # No column cache so no extra memory; just indexed access.

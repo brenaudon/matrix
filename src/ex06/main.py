@@ -11,3 +11,12 @@ if __name__ == "__main__":
         out = cross_product(u, v)
         print(f"{u} × {v} = {out}")
         assert all(abs(o - r) < 1e-9 for o, r in zip(out, ref))
+
+    print("\n=== Tests from correction ===\n")
+
+    print(cross_product(Vector([0, 0, 0]), Vector([0, 0, 0])))
+    print(cross_product(Vector([1, 0, 0]), Vector([0, 0, 0])))
+    print(cross_product(Vector([1, 0, 0]), Vector([0, 1, 0])))
+    print(cross_product(Vector([8, 7, -4]), Vector([3, 2, 1])))
+    print(cross_product(Vector([1, 1, 1]), Vector([0, 0, 0])))
+    print(cross_product(Vector([1, 1, 1]), Vector([1, 1, 1])))

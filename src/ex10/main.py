@@ -21,3 +21,11 @@ if __name__ == "__main__":
     for M in examples:
         print("Input:\n", M)
         print("Row‑echelon:\n", row_echelon(M), "\n")
+
+    print("\n=== Tests from correction ===\n")
+
+    print(row_echelon(Matrix([[0, 0], [0, 0]])))
+    print(row_echelon(Matrix([[1, 0], [0, 1]])))
+    print(row_echelon(Matrix([[4, 2], [2, 1]])))
+    print(row_echelon(Matrix([[-7, 2], [4, 8]])))
+    print(row_echelon(Matrix([[1, 2], [4, 8]])))

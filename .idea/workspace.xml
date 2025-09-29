@@ -4,22 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3437d65e-3920-493c-bfc1-4601b8c876e9" name="Changes" comment="feat: ex00 -&gt; ex09">
-      <change afterPath="$PROJECT_DIR$/src/ex10/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex10/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex10/row_echelon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex11/determinant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex11/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex11/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex12/inverse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex12/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex12/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex12/mul_mat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex13/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex13/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex13/rank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex13/row_echelon.py" afterDir="false" />
+    <list default="true" id="3437d65e-3920-493c-bfc1-4601b8c876e9" name="Changes" comment="fix: ex15 dot product u.u">
+      <change beforePath="$PROJECT_DIR$/.idea/matrix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/matrix.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex00/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex00/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex01/linear_combination.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex01/linear_combination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex01/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex01/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex02/linear_interpolation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex02/linear_interpolation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex02/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex02/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex03/dot_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex03/dot_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex03/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex03/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex04/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex04/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex04/norm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex04/norm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex05/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex05/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex05/previous_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex05/previous_ex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex06/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex06/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex07/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex07/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex07/mul_mat.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex07/mul_mat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex08/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex08/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex09/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex09/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex09/transpose.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex09/transpose.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex10/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex10/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex11/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex11/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex12/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex12/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex13/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex13/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex15/all_previous.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex15/all_previous.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex15/complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex15/complex.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,36 +54,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/brenaudo/projects/matrix/src/ex13",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/tmp/mbatty&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ex15" />
       <recent name="$PROJECT_DIR$/src/ex13" />
       <recent name="$PROJECT_DIR$/src/ex12" />
       <recent name="$PROJECT_DIR$/src/ex11" />
       <recent name="$PROJECT_DIR$/src/ex10" />
-      <recent name="$PROJECT_DIR$/src/ex09" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.74" />
-        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-PY-252.25557.178" />
+        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
       </set>
     </attachedChunks>
   </component>
@@ -85,7 +97,12 @@
       <option name="presentableId" value="Default" />
       <updated>1751118213050</updated>
       <workItem from="1751118214053" duration="12272000" />
-      <workItem from="1751725142231" duration="3003000" />
+      <workItem from="1751725142231" duration="3178000" />
+      <workItem from="1754048033103" duration="42000" />
+      <workItem from="1757583615228" duration="12057000" />
+      <workItem from="1757667607866" duration="1266000" />
+      <workItem from="1757676524955" duration="250000" />
+      <workItem from="1759153104930" duration="4754000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -103,15 +120,89 @@
       <option name="project" value="LOCAL" />
       <updated>1751130701830</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: ex10 -&gt; ex13">
+      <option name="closed" value="true" />
+      <created>1751729836634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751729836634</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: some unnecessary docstrings">
+      <option name="closed" value="true" />
+      <created>1755353581173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755353581173</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: many small fixes">
+      <option name="closed" value="true" />
+      <created>1757593829388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757593829388</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: complex bonus">
+      <option name="closed" value="true" />
+      <created>1757597257420</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1757597257420</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: deep copy range">
+      <option name="closed" value="true" />
+      <created>1757668252797</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1757668252797</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: ex12 mul_mat">
+      <option name="closed" value="true" />
+      <created>1757668536596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1757668536596</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: ex15 dot product u.u">
+      <option name="closed" value="true" />
+      <created>1757668805807</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1757668805807</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="feat: ex00 -&gt; ex09" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: ex00 -&gt; ex09" />
+    <MESSAGE value="feat: ex10 -&gt; ex13" />
+    <MESSAGE value="fix: some unnecessary docstrings" />
+    <MESSAGE value="fix: many small fixes" />
+    <MESSAGE value="feat: complex bonus" />
+    <MESSAGE value="fix: deep copy range" />
+    <MESSAGE value="fix: ex12 mul_mat" />
+    <MESSAGE value="fix: ex15 dot product u.u" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: ex15 dot product u.u" />
   </component>
 </project>

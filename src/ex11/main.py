@@ -12,3 +12,14 @@ if __name__ == "__main__":
         print("det(")
         print(M)
         print(") =", determinant(M), "\n")
+
+    print("\n=== Tests from correction ===\n")
+
+    print(determinant(Matrix([[0, 0], [0, 0]])))
+    print(determinant(Matrix([[1, 0], [0, 1]])))
+    print(determinant(Matrix([[2, 0], [0, 2]])))
+    print(determinant(Matrix([[1, 1], [1, 1]])))
+    print(determinant(Matrix([[0, 1], [1, 0]])))
+    print(determinant(Matrix([[1, 2], [3, 4]])))
+    print(determinant(Matrix([[-7, 5], [4, 6]])))
+    print(determinant(Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])))

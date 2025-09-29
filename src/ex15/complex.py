@@ -48,7 +48,7 @@ class Complex:
     def __neg__(self):
         return Complex(-self.re, -self.im)
     def __abs__(self):
-        return math.hypot(self.re, self.im) # sqrt(re^2 + im^2)
+        return (self.re ** 2 + self.im ** 2) ** 0.5
 
     def __repr__(self) -> str:
         sign = "+" if self.im >= 0 else "-"

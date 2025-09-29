@@ -24,3 +24,11 @@ if __name__ == "__main__":
     print("matrix .5:", lerp(m1, m2, 0.5))
     # Matrix([[11.0, 5.5],
     #         [16.5, 22.0]])
+
+    print("\n=== Tests from correction ===\n")
+
+    print(lerp(0., 1., 0.))
+    print(lerp(0., 1., 1.))
+    print(lerp(0., 42., 0.5))
+    print(lerp(-42., 42., 0.5))
+    print(lerp(Vector([-42., 42.]), Vector([42., -42.]), 0.5))

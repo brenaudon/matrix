@@ -11,8 +11,8 @@ T = TypeVar("T", bound = Number)
 def transpose(mat: Matrix[T]) -> Matrix[T]:
     """Return the transpose matrix B = Aᵀ.
 
-    Time complexity: Θ(n·m) (one assignment per entry)
-    Space complexity: Θ(n·m) (the returned matrix)
+    Time complexity: Θ(nm) (one assignment per entry)
+    Space complexity: Θ(nm) (the returned matrix)
     """
     rows, cols = mat.shape()
 

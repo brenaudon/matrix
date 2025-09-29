@@ -30,7 +30,7 @@ def norm2(v: Vector[T]) -> float:
     else:
         for x in v:
             total += x * x
-    return math.sqrt(total)
+    return total ** 0.5
 
 
 def norm_inf(v: Vector[T]) -> float:

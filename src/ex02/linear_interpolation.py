@@ -13,8 +13,8 @@ def lerp(u, v, t: float):
     """
     Linear interpolation between u and v with parameter t in [0,1].
 
-    Time complexity  : Θ(n)   where n is the total number of coordinates
-    Space complexity : Θ(n)   one new object of the same type as the inputs
+    Time complexity : Θ(n) where n is the total number of coordinates
+    Space complexity : Θ(n) one new object of the same type as the inputs
     """
     if not (0.0 <= t <= 1.0):
         raise ValueError("t must be in the closed interval [0, 1]")

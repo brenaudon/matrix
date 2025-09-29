@@ -34,3 +34,11 @@ if __name__ == "__main__":
     E = Matrix([[3., -5.], [6., 8.]])
     F = Matrix([[2.,  1.], [4.,  2.]])
     print("E·F = ", mat_mat_mul(E, F)) # [-14., -7.], [44.,  22.]
+
+    print("\n=== Tests from correction ===\n")
+
+    print(mat_vec_mul(Matrix([[0, 0], [0, 0]]), Vector([7, 8])))
+    print(mat_vec_mul(Matrix([[1, 0], [0, 1]]), Vector([5, 6])))
+    print(mat_vec_mul(Matrix([[1, 1], [1, 1]]), Vector([4, 2])))
+    print(mat_vec_mul(Matrix([[2, 0], [0, 2]]), Vector([2, 1])))
+    print(mat_vec_mul(Matrix([[0.5, 0], [0, 0.5]]), Vector([4, 2])))

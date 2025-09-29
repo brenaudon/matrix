@@ -43,8 +43,8 @@ def mat_vec_mul(mat: Matrix[T], u: Vector[T]) -> Vector[T]:
 def mat_mat_mul(mat1: Matrix[T], mat2: Matrix[T]) -> Matrix[T]:
     """Return the matrix–matrix product A·B.
 
-    Time complexity  : O(nmp)   (n=rows, m=cols, p=cols2)
-    Space complexity : O(mp)    (m=rows, p=cols2, result matrix)
+    Time complexity: O(nmp) (n=rows, m=cols, p=cols2)
+    Space complexity: O(mp) (m=rows, p=cols2, result matrix)
     """
     m, n = mat1.shape()
     n2, p = mat2.shape()

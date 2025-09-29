@@ -29,3 +29,11 @@ if __name__ == "__main__":
     u = Vector([1., 2., 3.])
     v = Vector([4., 5., 6.])
     print(angle_cos(u, v)) # 0.974631846
+
+    print("\n=== Tests from correction ===\n")
+
+    print(angle_cos(Vector([1, 0]), Vector([0, 1])))
+    print(angle_cos(Vector([8, 7]), Vector([3, 2])))
+    print(angle_cos(Vector([1, 1]), Vector([1, 1])))
+    print(angle_cos(Vector([4, 2]), Vector([1, 1])))
+    print(angle_cos(Vector([-7, 3]), Vector([6, 4])))

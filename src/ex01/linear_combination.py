@@ -19,7 +19,7 @@ def linear_combination(
 
     Complexity
     ----------
-    Time  : Θ(k·n) — each coordinate visited once per vector
+    Time: Θ(k * n) — each coordinate visited once per vector
     Memory: Θ(n) — one accumulator vector, no extra copies
     """
     if len(vectors) != len(coefs):

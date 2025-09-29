@@ -17,3 +17,12 @@ if __name__ == "__main__":
         print("M·M⁻¹ =\n", mat_mat_mul(M, invM))
 
         print("")
+
+    print("\n=== Tests from correction ===\n")
+
+    print(inverse(Matrix([[1, 0], [0, 1]])))
+    print(inverse(Matrix([[2, 0], [0, 2]])))
+    print(inverse(Matrix([[0.5, 0], [0, 0.5]])))
+    print(inverse(Matrix([[0, 1], [1, 0]])))
+    print(inverse(Matrix([[1, 2], [3, 4]])))
+    print(inverse(Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])))

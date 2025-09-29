@@ -11,3 +11,12 @@ if __name__ == "__main__":
         result = dot(u, v)
         print(f"dot({u}, {v}) = {result}")
         assert abs(result - ref) < 1e-9
+
+    print("\n=== Tests from correction ===\n")
+
+    print(dot(Vector([0, 0]), Vector([0, 0])))
+    print(dot(Vector([1, 0]), Vector([0, 0])))
+    print(dot(Vector([1, 0]), Vector([1, 0])))
+    print(dot(Vector([1, 0]), Vector([0, 1])))
+    print(dot(Vector([1, 1]), Vector([1, 1])))
+    print(dot(Vector([4, 2]), Vector([2, 1])))
